@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Shadows+Into+Light&display=swap');
+
+
+:root{
+    --vermelho: #d10000;
+    --vermelho-preto: #850c0e;
+    --vermelho-mais-preto: #6b0504;
+    --vermelho-mais-mais-preto:  #4f0000;
+    --font-titulo:  "Shadows Into Light", cursive;
+    --font-texto: "Lobster", sans-serif;
+
+}
+
+body{
+    background-color: var(--vermelho-preto);
+}
