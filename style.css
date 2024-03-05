@@ -17,7 +17,7 @@ body{
     font-family: var(--font-texto);
 }
 
-.conteudo-principal{
+.conteúdo-principal{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,4 +25,60 @@ body{
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
+}
+
+.titulo-principal{
+    text-align: left;
+    width: 100%;
+    font-size: 36px;
+}
+
+
+.titulo-principal span{
+    color: var(--vermelho-mais-mais-preto);
+}
+
+.botao{
+    font-family: var(--font-texto);
+    font-size: 22px;
+    background-color: var(--vermelho-mais-preto);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    width: 100%;
+    border-bottom: 4px solid red;
+    border-left: 4px solid red;
+    border-right: 4px solid red;
+    border-top: none;
+}
+
+.botoes {
+    display: block;
+}
+
+.botao:first-child{
+    border-radius: 40px 40px 0 0;
+}
+
+.botao:last-child{
+    border-radius: 0 0 40px 40px;
+}
+
+.ativo{
+    background-color: var(--vermelho-mais-mais-preto);
+    border-bottom: 4px solid black;
+}
+
+@media screen and (min-width: 768px) {
+    .botoes{
+        display: flex;
+    }
+    .botao:first-child{
+        border-radius: 40px 0 0 0;
+    }
+    .botao:last-child{
+        border-radius: 0 40px 0 0;
+    }
 }
