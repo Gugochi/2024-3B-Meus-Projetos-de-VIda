@@ -13,11 +13,11 @@
 
 body{
     background-color: var(--vermelho-preto);
-    color: var(--vermelho);
+    color: white;
     font-family: var(--font-texto);
 }
 
-.conteúdo-principal{
+.conteudo-principal{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -66,9 +66,34 @@ body{
     border-radius: 0 0 40px 40px;
 }
 
-.ativo{
+.botao.ativo{
     background-color: var(--vermelho-mais-mais-preto);
     border-bottom: 4px solid var(--vermelho-mais-preto);
+}
+
+.abas-textos{
+    background-color: var(--vermelho-mais-mais-preto);
+    padding: 40px;
+    border-radius: 0 0 40px 40px;
+}
+
+.aba-conteudo.ativo{
+    display: block;
+}
+
+.aba-conteudo{
+    display: none;
+}
+
+.aba-conteudo-titulo-principal{
+    font-size: 28px;
+    text-align: center;
+}
+
+.aba-conteudo-titulo-secundario{
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
 }
 
 @media screen and (min-width: 768px) {
